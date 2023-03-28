@@ -1,35 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useState, useEffect } from "react";
+import Navbar from "./Components/Navbar";
+import Header from "./Components/Header";
+import About from "./Components/About";
+import Skills from "./Components/Skills";
+import Education from "./Components/Education";
+import Projects from "./Components/Projects";
+import Repositories from "./Components/Repositories";
+import Contact from "./Components/Contact";
 
-function App() {
-  const [count, setCount] = useState(0)
+import HashLoader from "react-spinners/HashLoader";
 
-  return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+const App = () =>{
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(()=>{
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    },10);
+  },[])
+
+  return(
+    <>
+    {
+      loading ? <HashLoader color="#0bb8f1" loading={loading} size={50} aria-label="Loading Spinner" data-testid="loader"
+      className="flex mx-auto mt-[20rem]"/>
+    :
+    <>
+    <Navbar/>
+    <Header/>
+    <About/>
+    <Skills/>
+    <Education/>
+    <Projects/>
+    <Repositories/>
+    <Contact/>
+    </>
+}
+    </>
   )
 }
-
-export default App
+export default App;
