@@ -116,8 +116,8 @@ const About = () => {
                   {/* End of Experience, Completed & Learning Design Section */}
 
                   <h1 className="flex flex-col sm:flex-row font-bold text-[25px] md:text-2xl tab:text-[33px] text-gray-800 text-left font antialiased">
-                    Hey, I'm Rahul and I'm a
-                    <h1>
+                    Hey, I'm Rahul and I'm a 
+                    <p>
                       <Typed
                         className="text-cyan-500 text-[25px] md:text-2xl tab:text-[33px] font antialiased font-bold"
                         strings={[
@@ -130,7 +130,7 @@ const About = () => {
                         backSpeed={60}
                         loop
                       />
-                    </h1>
+                    </p>
                   </h1>
                   <p className="mt-3 md:text-[15px] leading-6 sm:pr-5 first-letter:text-3xl first-letter:font-semibold">
                     Hello, my name is Rahul Singh Kushwah. I live in Gwalior,

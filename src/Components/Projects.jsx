@@ -121,7 +121,7 @@ const Projects = () =>{
                     <>
                       <SwiperSlide>
                           <Projectscards
-                            key = {val.id}
+                            key = {val.id+val.title}
                             id = {index}
                             image = {val.imgsrc}
                             title = {val.title}

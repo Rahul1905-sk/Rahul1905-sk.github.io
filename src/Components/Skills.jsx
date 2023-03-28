@@ -64,7 +64,7 @@ const Skills = () =>{
                         return(
                             <>
                             <Pic
-                              key={elem.id}
+                              key={elem.id+elem.title}
                               img={elem.image}
                               title={elem.title}
                               subtitle={elem.subtitle}
