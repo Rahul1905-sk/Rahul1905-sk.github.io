@@ -1,5 +1,5 @@
 import React from "react";
-import Typed from "react-typed";
+// import Typed from "react-typed";
 import { FiAward } from "react-icons/fi";
 import { BiBriefcase, BiDesktop } from "react-icons/bi";
 
@@ -118,7 +118,7 @@ const About = () => {
                   <h1 className="flex flex-col sm:flex-row font-bold text-[25px] md:text-2xl tab:text-[33px] text-gray-800 text-left font antialiased">
                     Hey, I'm Rahul and I'm a 
                     <p>
-                      <Typed
+                      {/* <Typed
                         className="text-cyan-500 text-[25px] md:text-2xl tab:text-[33px] font antialiased font-bold"
                         strings={[
                           " React Developer",
@@ -129,7 +129,7 @@ const About = () => {
                         typeSpeed={90}
                         backSpeed={60}
                         loop
-                      />
+                      /> */}
                     </p>
                   </h1>
                   <p className="mt-3 md:text-[15px] leading-6 sm:pr-5 first-letter:text-3xl first-letter:font-semibold">

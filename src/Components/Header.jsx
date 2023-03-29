@@ -1,5 +1,5 @@
 import React, {useEffect} from "react";
-import Typed from 'react-typed';   // Import Typed Library using for Text Typing animation
+// import Typed from 'react-typed';   // Import Typed Library using for Text Typing animation
 import "animate.css";
 
 /* Import Aos Libraray for Move the content */
@@ -52,13 +52,13 @@ const Header = () =>{
 
                     <h2 className="text-4xl text-white font text-[24px] md:text-4xl">& I'm a <span>
 
-                    <Typed
+                    {/* <Typed
                         className="text-cyan-500 font"
                         strings={[' React Developer', ' Frontend Developer', ' MERN Developer', ' Full-Stack Developer']}
                         typeSpeed={80}
                         backSpeed={60}
                         loop
-                    />
+                    /> */}
                     </span></h2>
 
                     <p className="text-white text-[13px] sm:text-sm leading-normal ">I'm creative web developer based on Uttar Pradesh, 
