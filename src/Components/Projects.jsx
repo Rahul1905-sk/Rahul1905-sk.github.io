@@ -1,150 +1,152 @@
-import React,{useEffect} from "react";
+import React from "react";
+import geek from "../assests/pirate.png";
+import lens from "../assests/lenskart.png";
+import cal from "../assests/cal.png";
+import { SiNetlify } from "react-icons/si";
+import gojo from "../assests/gojo.png";
+import { AiFillGithub } from "react-icons/ai";
 
-/* Import Aos Libraray for Move the content */
-import Aos from "aos";
-import "aos/dist/aos.css";
-
-
-// Import Swiper React components
-import { Swiper, SwiperSlide } from "swiper/react";
-
-// Import Swiper styles
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-
-
-// import required modules
-import { Autoplay, Pagination } from "swiper";
-
-
-import {projectData} from "./Data.jsx";
-import { FaGithub, FaYoutube, FaChrome } from "react-icons/fa";
-
-
-
-const Projectscards = (props) =>{
- 
-    return(
-        <>
-        <div className="w-[300px] bg-gray-900 rounded-md shadow-lg mx-auto " data-aos="zoom-in-out">
-
-            <div className="p-2 overflow-hidden">
-                 <img src={props.image} alt="Error!" className="rounded-md "/>
-            </div>
-            
-            <div className="flex flex-row space-x-1 items-center justify-between">
-                <h1 className="text-white uppercase text-base pl-5 py-2 font-semibold font">{props.title}</h1>
-
-                <div className="flex flex-row mx-auto py-2 gap-x-4 px-5">
-                   
-                   <a href = {props.github}><FaGithub size="20" className="text-yellow-300"/></a>
-
-                   {props.id === 0 || props.id === 1 ? (<a href = {props.youtube}><FaYoutube size="20" className="text-[#fc036f]"/></a>):
-                   (<a href = {props.youtube}><FaChrome size="20" className="text-cyan-300"/></a>)}
-                        
-                </div>
-            </div>
-          
-            <p className="text-white text-[13px] md:text-[13px]  text-justify px-5 pt-2 pb-8">{props.detail}</p>
+const Projects = () => {
+  return (
+    <>
+      <section id="projects">
+        <div className="main-text">
+          <h2>
+            <span>Latest </span>Projects
+          </h2>
         </div>
-        </>
-    );
-}
 
-
-const Projects = () =>{
-
-  useEffect(()=>{
-    Aos.init({offset: 100,
-        duration: 600,
-        easing: 'ease-in',
-        once:true,
-        delay: 100});
-  },[])
-
-    return(
-        <>
-        <section className="bg-white w-full pt-20 sm:pt-24 " id='project'>
-
-            {/* About me design */}
-            <div className="max-w-[300px] mx-auto text-center">
-
-                <h1 className="font-bold text-3xl tab:text-5xl md:text-4xl text-gray-800 font-serif">Projects</h1>
-
-                <div className="w-[300px] flex flex-row gap-x-3 items-center justify-center">
-
-                    <div className="w-[50px] h-1 bg-cyan-500 rounded-md"></div>
-                        <h1 className="text-[#fc036f] font-semibold">What i Provide</h1>
-                    <div className="w-[50px] h-1 bg-cyan-500 rounded-md"></div>
-                </div>
+        <div className="nav-link projects" id="nav-link-projects">
+          <div className="project-card">
+            <img src={lens} alt="" />
+            <div className="layer">
+              <h5 className="project-title">pepperFry.Com</h5>
+              <p className="project-description">
+              Pepperfry is an Indian online marketplace for furniture and home décor. The company is headquartered in Mumbai, Maharashtra.
+              </p>
+              <p className="project-tech-stack">
+                Tech-Stack : REACT, JS, HTML, CSS, Chakra
+              </p>
+              <div className="project-deployed-link">
+                <a href="gilded-alfajores-04941f.netlify.app/" target="_blank">
+                  <i>
+                    <SiNetlify />
+                  </i>
+                </a>
+              </div>
+              <div className="project-github-link">
+                <a
+                  href="https://github.com/Souravlahiri2507/cloudy-thing-7898"
+                  target="_blank"
+                  id="project-deployed-link"
+                >
+                  <i>
+                    <AiFillGithub />
+                  </i>
+                </a>
+              </div>
             </div>
-            {/* End About-me design */} 
+          </div>
 
-
-            {/* Project Cards */}
-
-            <div className="max-w-[1200px] mx-auto p-3 flex flex-row mt-[25px]  place-items-center">
-            <Swiper
-              
-              spaceBetween={30}
-              centeredSlides={false}
-              autoplay={{
-               delay: 2500,
-               disableOnInteraction: false,
-              }}
-              pagination={{
-                clickable: true,
-              }}
-          
-              modules={[Autoplay, Pagination]}
-              className="mySwiper"
-              breakpoints={{
-                "0":{
-                  slidesPerView: 1,
-                  spaceBetween: 10,
-                },
-
-                "600":{
-                  slidesPerView: 1,
-                  spaceBetween: 10,
-                },
-                "1000":{
-                  slidesPerView: 3,
-                  spaceBetween: 10,
-                }
-             }}
-            >
-                 {
-                projectData.map((val,index) => {
-                   return(
-                    <>
-                      <SwiperSlide>
-                          <Projectscards
-                            key = {val.id+val.title}
-                            id = {index}
-                            image = {val.imgsrc}
-                            title = {val.title}
-                            detail = {val.details}
-                            github = {val.github}
-                            youtube = {val.youtube}
-                          />
-                      </SwiperSlide>
-                      
-
-                    </>
-                   );
-                })
-
-              }
-              
-            </Swiper>
-
+          <div className="project-card">
+            <img src={geek} alt="" />
+            <div className="layer">
+              <h5 className="project-title">Visula Design</h5>
+              <p className="project-description">
+              Booking.com, headquartered in Amsterdam, is one of the largest online travel agencies. It is a subsidiary of Booking Holdings. In 2022, the company's mobile app was the most downloaded mobile app in the travel agency category.
+              </p>
+              <p className="project-tech-stack">Tech-Stack : HTML , CSS, JS</p>
+              <div className="project-deployed-link">
+                <a
+                  href="https://effulgent-syrniki-67b038.netlify.app/index.html"
+                  target="_blank"
+                >
+                  <i>
+                    <SiNetlify />
+                  </i>
+                </a>
+              </div>
+              <div className="project-github-link">
+                <a
+                  href="https://github.com/Shahid77137/abundant-coat-8487"
+                  target="_blank"
+                  id="project-deployed-link"
+                >
+                  <i>
+                    <AiFillGithub />
+                  </i>
+                </a>
+              </div>
             </div>
+          </div>
 
-        </section>
-        </>
-    )
-}
+          <div className="project-card">
+            <img src={cal} alt="" />
+            <div className="layer">
+              <h5 className="project-title">Visula Design</h5>
+              <p className="project-description">
+              Masai Calculator ( A fully functional Calculator )
+              </p>
+              <p className="project-tech-stack">Tech-Stack</p>
+              <div className="project-deployed-link">
+                <a
+                  href="delicate-tulumba-9050c3.netlify.app/"
+                  target="_blank"
+                >
+                  <i>
+                    <SiNetlify />
+                  </i>
+                </a>
+              </div>
+              <div className="project-github-link">
+                <a
+                  href="https://github.com/Souravlahiri2507/cold-throat-6863"
+                  target="_blank"
+                  id="project-deployed-link"
+                >
+                  <i>
+                    <AiFillGithub />
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="project-card">
+            <img src={gojo} alt="" />
+            <div className="layer">
+              <h5 className="project-title">Visula Design</h5>
+              <p className="project-description">
+              What is RentoMojo? We're an online rental company and we're here to offer you easy access to a smarter & better lifestyle. Our services let you rent lifestyle essentials like furniture, appliances and more at affordable prices.
+              </p>
+              <p className="project-tech-stack">Tech-Stack : HTML, CSS, JS</p>
+              <div class="project-deployed-link">
+                <a
+                  href="lively-kitsune-c2be93.netlify.app/"
+                  target="_blank"
+                >
+                  <i>
+                    <SiNetlify />
+                  </i>
+                </a>
+              </div>
+              <div className="project-github-link">
+                <a
+                  href="https://github.com/hoshiyarjyani/deafening-weather-2115"
+                  target="_blank"
+                  id="project-deployed-link"
+                >
+                  <i>
+                    <AiFillGithub />
+                  </i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
 
 export default Projects;

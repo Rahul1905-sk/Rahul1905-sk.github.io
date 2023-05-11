@@ -9,19 +9,26 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.6.1",
     "@emailjs/browser": "^3.10.0",
+    "@emotion/react": "^11.11.0",
+    "@emotion/styled": "^11.11.0",
     "animate.css": "^4.1.1",
     "aos": "^2.3.4",
+    "framer-motion": "^10.12.10",
+    "github-calendar": "^2.3.2",
     "hamburger-react": "^2.5.0",
     "lottie-react": "^2.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-github-calendar": "^4.0.0",
     "react-icons": "^4.8.0",
     "react-router-dom": "^6.9.0",
     "react-scroll": "^1.8.9",
     "react-spinners": "^0.13.8",
     "sweetalert2": "^11.7.3",
-    "swiper": "^9.1.1"
+    "swiper": "^9.1.1",
+    "web-vitals": "^3.3.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

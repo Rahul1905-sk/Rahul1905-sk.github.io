@@ -1,44 +1,26 @@
-import React, { useState, useEffect } from "react";
-import Navbar from "./Components/Navbar";
-import Header from "./Components/Header";
-import About from "./Components/About";
-import Skills from "./Components/Skills";
-import Education from "./Components/Education";
+import "./App.css";
+import Home from "./Components/Home";
+import About from "./Components/about";
+import Header from "./Components/header";
+import Skills from "./Components/skills";
 import Projects from "./Components/Projects";
-import Repositories from "./Components/Repositories";
-import Contact from "./Components/Contact";
+import Githubs from "./Components/githubs";
+import Contact from "./Components/contact";
+import End from "./Components/end";
 
-import HashLoader from "react-spinners/HashLoader";
-
-const App = () =>{
-
-  const [loading, setLoading] = useState(true);
-
-  useEffect(()=>{
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    },10);
-  },[])
-
-  return(
-    <>
-    {
-      loading ? <HashLoader color="#0bb8f1" loading={loading} size={50} aria-label="Loading Spinner" data-testid="loader"
-      className="flex mx-auto mt-[20rem]"/>
-    :
-    <>
-    <Navbar/>
-    <Header/>
-    <About/>
-    <Skills/>
-    <Education/>
-    <Projects/>
-    <Repositories/>
-    <Contact/>
-    </>
+function App() {
+  return (
+    <div className="body">
+     <Header />
+     <Home />
+     <About />
+     <Skills />
+     <Projects />
+     <Githubs />
+     <Contact />
+     <End />
+    </div>
+  );
 }
-    </>
-  )
-}
+
 export default App;

@@ -1,88 +1,110 @@
-import React, { useEffect } from "react";
-import Data from "./Data";
+import React from "react";
+import { FaReact } from "react-icons/fa";
+import { TbBrandJavascript } from "react-icons/tb";
+import { AiOutlineHtml5 } from "react-icons/ai";
+import { TbBrandCss3 } from "react-icons/tb";
+import { SiRedux } from "react-icons/si";
+import { DiNodejs } from "react-icons/di";
+import { SiTypescript } from "react-icons/si";
+import { TfiWrite } from "react-icons/tfi";
 
-/* Import Aos Libraray for Move the content */
-import Aos from "aos";
-import "aos/dist/aos.css";
-
-
-const Pic = (props) =>{
-    return(
-        <>
-        <div className="flex flex-col space-y-4 bg-white items-center p-5 rounded-lg hover:scale-105" data-aos="fade-up">
-
-            <div className="w-32 h-32 rounded-full border-1 shadow-lg relative ">
-                <img src={props.img} className="bg-center bg-contain p-5"/>
-                {/* <div className="bg-gray-800 p-2.5 sm:p-2 absolute rounded-full mt-[-25px] ml-[90px] text-white text-[11px] sm:text-[10px] ">{props.num}%</div> */}
-            </div>
-
-            <h2 className="text-center font-bold text-gray-800">{props.title}</h2>
-            <p className="font-semibold text-center text-gray-700 text-[13px] sm:text-[12px]">{props.subtitle}</p>
-
+const Skills = () => {
+  return (
+    <>
+      <section id="skills">
+        <div className="main-text">
+          <h2>
+            <span>My </span>Skills
+          </h2>
+          <p style={{ marginTop: "10px" }}>What I am Expert In ?</p>
         </div>
-        </>
-    )
-}
 
-const Skills = () =>{
-
-    useEffect(()=>{
-        Aos.init({offset: 200,
-            duration: 600,
-            easing: 'ease-in',
-            once:true,
-            delay: 100});
-    },[])
-
-    return(
-        <>
-        <section className="bg-gray-900 w-full pt-20 sm:pt-24 px-3" id="skill">
-            
-           <div className="w-full h-full">
-               
-            {/* About me design */}
-            <div className="max-w-[300px] mx-auto  text-center">
-
-                <h1 className="font-bold text-3xl tab:text-5xl md:text-4xl text-white font-serif">Skills</h1>
-
-                <div className="w-[300px] flex flex-row gap-x-3 items-center justify-center">
-
-                    <div className="w-[50px] h-1 bg-cyan-500 rounded-md"></div>
-                        <h1 className="text-[#fc036f] font-semibold">What i Know</h1>
-                    <div className="w-[50px] h-1 bg-cyan-500 rounded-md"></div>
-                </div>
+        <div className="nav-link skills" id="skills-part">
+          <div className="skills-card">
+            <div className="skills-card-img">
+              <FaReact
+                style={{ height: "50px", width: "50px", margin: "auto" }}
+              />
             </div>
-            {/* End About-me design */} 
-
-
-            {/* Skills Grid section */}
-            <div className="flex items-center justify-center">
-                <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 p-3 sm:p-5">
-                  
-                  {
-                    Data.map((elem)=>{
-                        return(
-                            <>
-                            <Pic
-                              key={elem.id+elem.title}
-                              img={elem.image}
-                              title={elem.title}
-                              subtitle={elem.subtitle}
-                            //   num={elem.num}
-                            />
-                            </>
-                        )
-                    })
-                  }
-                    
-
-                </div>
+            <h3 className="skills-card-name" style={{ color: "#61dc14" }}>
+              React
+            </h3>
+          </div>
+          <div className="skills-card">
+            <div className="skills-card-img">
+              <TbBrandJavascript
+                style={{ height: "50px", width: "50px", margin: "auto" }}
+              />
             </div>
+            <h3 className="skills-card-name" style={{ color: "#61dc14" }}>
+              JavaScript
+            </h3>
+          </div>
+          <div className="skills-card">
+            <div className="skills-card-img">
+              <AiOutlineHtml5
+                style={{ height: "50px", width: "50px", margin: "auto" }}
+              />
+            </div>
+            <h3 className="skills-card-name" style={{ color: "#61dc14" }}>
+              HTML
+            </h3>
+          </div>
+          <div className="skills-card">
+            <div className="skills-card-img">
+              <TbBrandCss3
+                style={{ height: "50px", width: "50px", margin: "auto" }}
+              />
+            </div>
+            <h3 className="skills-card-name" style={{ color: "#61dc14" }}>
+              CSS
+            </h3>
+          </div>
+          <div className="skills-card">
+            <div className="skills-card-img" style={{ textAlign: "center" }}>
+              <SiRedux
+                style={{ height: "50px", width: "50px", margin: "auto" }}
+              />
+            </div>
+            <h3 className="skills-card-name" style={{ color: "#61dc14" }}>
+              Redux
+            </h3>
+          </div>
+          <div className="skills-card">
+            <div className="skills-card-img">
+              <DiNodejs
+                style={{ height: "50px", width: "50px", margin: "auto" }}
+              />
+            </div>
+            <h3 className="skills-card-name" style={{ color: "#61dc14" }}>
+              Node JS
+            </h3>
+          </div>
+          <div className="skills-card">
+            <div className="skills-card-img">
+              <SiTypescript
+                style={{ height: "50px", width: "50px", margin: "auto" }}
+              />
+            </div>
+            <h3 className="skills-card-name" style={{ color: "#61dc14" }}>
+              TypeScript
+            </h3>
+          </div>
 
+          <div className="skills-card">
+            <div className="skills-card-img">
+              <TfiWrite
+                style={{ height: "50px", width: "50px", margin: "auto" }}
+              />
+            </div>
+            <h3 className="skills-card-name" style={{ color: "#61dc14" }}>
+              DSA
+            </h3>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
 
-           </div>
-        </section>
-        </>
-    )
-}
 export default Skills;
