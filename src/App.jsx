@@ -1,26 +1,22 @@
-import "./App.css";
-import Home from "./Components/Home";
-import About from "./Components/about";
-import Header from "./Components/header";
-import Skills from "./Components/skills";
-import Projects from "./Components/Projects";
-import Githubs from "./Components/githubs";
-import Contact from "./Components/contact";
-import End from "./Components/end";
-
-function App() {
+import { MantineProvider, Text } from "@mantine/core";
+import Navbar from "./components/Navbar";
+import HomePage from "./components/HomePage";
+import About from "./components/About";
+import Sklills from "./components/Sklills";
+import GitStats from "./components/GitStats";
+import Projects from "./components/Projects";
+import { ContactPage } from "./components/ContactPage";
+export default function App() {
   return (
-    <div className="body">
-     <Header />
-     <Home />
-     <About />
-     <Skills />
-     <Projects />
-     <Githubs />
-     <Contact />
-     <End />
-    </div>
+    <MantineProvider withGlobalStyles withNormalizeCSS>
+      <Navbar />
+      <HomePage />
+      <About />
+      <Sklills />
+
+      <Projects />
+      <GitStats />
+      <ContactPage />
+    </MantineProvider>
   );
 }
-
-export default App;
