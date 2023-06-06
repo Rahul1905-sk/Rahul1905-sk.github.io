@@ -61,6 +61,7 @@ export const ProjectCard = ({ title,des,video,techStack,type,github, deploy }) =
         playsInline
         muted
       />
+      <img src="" alt="" />
       <Flex direction="column" p="1rem" gap="10px">
         <Flex w="100%" justify="space-between" align="center">
           <Title  className="project-title" order={3}>{title}</Title>

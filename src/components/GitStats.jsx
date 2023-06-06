@@ -27,7 +27,7 @@ const GitStats = () => {
         </Flex>
         <Flex gap={'10px'} p={'20px'} >
           <Flex direction={"column"} align={"center"}>
-            <Text fz={"28px"} fw={"bold"}id="github-stats-card" >
+            <Text fz={"28px"} fw={"bold"} >
               Github{" "}
               <Text color={primaryColor} display={"inline-block"}>
                 Stats
@@ -35,12 +35,13 @@ const GitStats = () => {
             </Text>
 
             <img
+id="github-stats-card"
               src="https://github-readme-stats.vercel.app/api?username=Rahul1905-sk&theme=default_border=false&include_all_commits=false&count_private=false"
               alt="git stats"
             />
           </Flex>
           <Flex direction={"column"} align={"center"}>
-            <Text fz={"28px"} fw={"bold"} id="github-streak-stats">
+            <Text fz={"28px"} fw={"bold"} >
               Github{" "}
               <Text color={primaryColor} display={"inline-block"}>
                 Streaks
@@ -48,13 +49,14 @@ const GitStats = () => {
             </Text>
 
             <img
+            id="github-streak-stats"
               src="https://github-readme-streak-stats.herokuapp.com/?user=Rahul1905-sk&theme=default_border=false"
               alt="streaks"
             />
           </Flex>
         </Flex>
           <Flex direction={"column"} align={"center"}>
-            <Text fz={"28px"} fw={"bold"} id="github-top-langs" >
+            <Text fz={"28px"} fw={"bold"}  >
               Github{" "}
               <Text color={primaryColor} display={"inline-block"}>
               Languages
@@ -62,6 +64,7 @@ const GitStats = () => {
             </Text>
 
             <img
+            id="github-top-langs"
               height={"195px"}
               src="https://github-readme-stats.vercel.app/api/top-langs/?username=Rahul1905-sk&theme=default_border=false&include_all_commits=false&count_private=false&layout=compact"
               alt="Languages"
