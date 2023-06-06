@@ -67,7 +67,7 @@ useEffect(() => {
     >
       <Flex direction={"column"} sx={{flex:1}} >
         <Title order={1}> Hi, I'm </Title>
-        <Title   order={1} fz={'3rem'}> Rahul Singh Kushwah </Title>
+        <Title id="user-detail-name"  order={1} fz={'3rem'}> Rahul Singh Kushwah </Title>
         <Flex component={'h1'} order={2}>
           {" "}
           And I'm a &nbsp; <Text component="span">  <TypewriterComp arr={arr} /></Text>
@@ -100,10 +100,15 @@ useEffect(() => {
             radius={'0.3rem'}
              fz={'20px'} 
              id="resume-button-1"
-            leftIcon={ <FcDownload style={{marginRight:'5px'}}  />}
+             className="nav-link resume-2" 
+            
+            leftIcon={ <FcDownload  id="resume-link-2"  style={{marginRight:'5px'}}  />}
           >
             Resume
           </Button>
+
+
+
         
       </Flex>
       <Flex direction={"column"} w={'45%'}>

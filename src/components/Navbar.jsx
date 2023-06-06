@@ -52,9 +52,11 @@ console.log(linkName);
 
     <Flex pos={'sticky'}  top={0} left={0} id="nav-menu"   h="5rem" justify={'space-around'} align={"center"} sx={{boxShadow: "rgba(0, 0, 0, 0.1) 0px 25px 20px -20px", zIndex:100, backgroundColor:'white'}}>
         <Title style={{fontFamily: 'g'}} fz={'40px'}   > <Text ff={'cursive'}  component='span' color={primaryColor}> R</Text>SK </Title>
-        <Flex id='nav-menu' w="50%" justify={"space-evenly"} align={"center"} > 
+        <Flex id='nav-menu' w="50%" justify={"space-evenly"}  align={"center"} > 
    
        {arr.map((e)=> <Link key={e.title} {...e} active={linkName === e.name} />  )}
+       
+       <Anchor href={to} >   <NavLink label={'Resume'}  id="resume-button-1" style={{display:'none'}} /> </Anchor>
         </Flex>
        
     </Flex>

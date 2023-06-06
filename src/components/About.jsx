@@ -79,7 +79,7 @@ useEffect(() => {
               icon={<BsDisplay />}
             />
           </Flex>
-          <Box mt={"2.5rem"} mb={'40px'}  fw={500} sx={{ textAlign: "justify" }}>
+          <Box  id="user-detail-intro"  className="user-detail-intro" mt={"2.5rem"} mb={'40px'}  fw={500} sx={{ textAlign: "justify" }}>
             An aspiring Full Stack Web Developer who build things for the web
             and enjoy creating things that live on the internet and has a strong
             command of HTML, CSS, and JavaScript, and is proficient in the MERN
