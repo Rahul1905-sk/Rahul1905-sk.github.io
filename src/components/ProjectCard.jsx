@@ -47,7 +47,7 @@ export const ProjectCard = ({ title,des,video,techStack,type,github, deploy }) =
     <Flex
       direction="column"
       w="500px"
-      class="project-card"
+      className="project-card"
       bg="#eeeeee"
       sx={{
         borderRadius: "1rem",
@@ -63,7 +63,7 @@ export const ProjectCard = ({ title,des,video,techStack,type,github, deploy }) =
       />
       <Flex direction="column" p="1rem" gap="10px">
         <Flex w="100%" justify="space-between" align="center">
-          <Title  class="project-title" order={3}>{title}</Title>
+          <Title  className="project-title" order={3}>{title}</Title>
         
           <Badge variant="gradient" gradient={{ from: "indigo", to: "cyan" }}>
            {type}
@@ -71,11 +71,11 @@ export const ProjectCard = ({ title,des,video,techStack,type,github, deploy }) =
          
         </Flex>
 
-        <Text class="project-description">
+        <Text className="project-description">
          {des}
         </Text>
 
-        <Title align={"start"}  class="project-tech-stack" order={3}>
+        <Title align={"start"}  className="project-tech-stack" order={3}>
           Tech Stack:{" "}
         </Title>
         <Group>
@@ -93,7 +93,7 @@ export const ProjectCard = ({ title,des,video,techStack,type,github, deploy }) =
             variant="filled"
             radius="xl"
             rightIcon={<SiGithub size="0.9rem" />}
-            class="project-github-link"
+            className="project-github-link"
           >
             Github
           </Button>
@@ -104,7 +104,7 @@ export const ProjectCard = ({ title,des,video,techStack,type,github, deploy }) =
             target="_blank"
             variant="filled"
             radius="xl"
-            class="project-deployed-link"
+            className="project-deployed-link"
             rightIcon={<BiLink size="0.9rem" />}
           >
             Deployment
