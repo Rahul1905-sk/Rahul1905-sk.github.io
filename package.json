@@ -1,30 +1,16 @@
 {
-  "name": "portfolio",
+  "name": "vite-project",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.6",
-    "@lottiefiles/react-lottie-player": "^3.5.3",
-    "@mantine/core": "^6.0.9",
-    "@mantine/hooks": "^6.0.9",
-    "@tabler/icons-react": "^2.19.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-github-calendar": "^4.0.0",
-    "react-icons": "^4.8.0",
-    "react-intersection-observer": "^9.4.4",
-    "react-player": "^2.12.0",
-    "react-reveal": "^1.2.2",
-    "react-tsparticles": "^2.9.3",
-    "tsparticles": "^2.9.3",
-    "typewriter-effect": "^2.19.0"
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
