@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Flex, Text, useMantineTheme } from "@mantine/core";
+import { Anchor, Box, Button, Flex, Text, useMantineTheme } from "@mantine/core";
 import Card from "./Card";
 import MyTitle from "./MyTitle";
 
@@ -13,7 +13,7 @@ import {  } from "react-intersection-observer";
 import { useInView } from 'react-intersection-observer';
 import NavbarContextProvider, { useNavbarData } from "./NavbarContext";
 import { useEffect } from "react";
-
+import resume from './download/Rahul_Kushwah_Resume.pdf'
  
 const About = () => {
   const { colors } = useMantineTheme();
@@ -87,21 +87,50 @@ useEffect(() => {
             and has the ability to adapt to new technologies. Capable of working
             in teams by providing valuable support.
           </Box>
-
-          <Button
+          {/* <Button
+              id='resume-button-2'
+              onClick={() =>
+                openInNewTab(
+                  'https://drive.google.com/file/d/1axYneHxeq0hrnoHqdb_KJNWoEMfTPdnO/view' */}
+                  {/* // 'https://drive.google.com/file/d/1iRtaj8LV9l5y9-aiEVNRFC0KLz5Q-JMZ/view?usp=sharing' */}
+                {/* )
+              }
+              colorScheme={'teal'}
+            >
+              <a href={resume} download id='resume-link-2'>
+                <Flex>
+                  <Text as='span'>Resume</Text>
+                  <Text as='span' ml={'2'}> */}
+                    {/* <AiOutlineDownload fontSize={'1.2rem'} /> */}
+                  {/* </Text>
+                </Flex>
+              </a>
+            </Button> */}
+         
+         <a
+            href="/Rahul_Kushwah_Resume.pdf"
+            download="Rahul_Kushwah_Resume.pdf"
+            onClick={() => {
+              window.open(
+                // "https://drive.google.com/file/d/1-27JqVP743yK-A3ZE3CvIRpF32OzsQfL/view?usp=sharing"
+                "https://drive.google.com/file/d/1axYneHxeq0hrnoHqdb_KJNWoEMfTPdnO/view"
+              );
+            }}
             target="_blank"
-            style={{ alignSelf: "center", boxSizing: "content-box" }}
-            onClick={handleResume}
-            className="nav-link resume"
-            p={"8px 35px"}
-            radius={"0.3rem"}
-            fz={"20px"}
-            id="resume-button-2" 
-           
-            leftIcon={<FcDownload style={{ marginRight: "5px" }} />}
+            rel="noopener noreferrer"
           >
-            Resume
-          </Button>
+            <Button
+              colorScheme={"transperent"}
+              className="link"
+              fontSize={"25px"}
+              p="0"
+              id="resume-button-2"
+              value="download"
+            > 
+              Resume
+            </Button>
+          </a>
+
         </Flex>
       </Flex>
     </Flex>

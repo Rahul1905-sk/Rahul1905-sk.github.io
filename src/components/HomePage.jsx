@@ -22,8 +22,7 @@ import { useInView } from "react-intersection-observer";
 
 export const handleResume = () => {
   window.open('https://drive.google.com/file/d/1axYneHxeq0hrnoHqdb_KJNWoEMfTPdnO/view?usp=sharing')
-  window.open('https://drive.google.com/u/0/uc?id=1axYneHxeq0hrnoHqdb_KJNWoEMfTPdnO&export=download')
-}
+ }
 const HomePage = () => {
   const { colors } = useMantineTheme();
   const {primaryColor} = useMantineTheme()
@@ -92,7 +91,7 @@ useEffect(() => {
           </ActionIcon>
         </Group >
         
-          <Button
+          {/* <Button
             target="_blank"
           style={{alignSelf:'flex-start', boxSizing: 'content-box'}}
             onClick={handleResume} 
@@ -105,8 +104,31 @@ useEffect(() => {
             leftIcon={ <FcDownload  id="resume-link-2"  style={{marginRight:'5px'}}  />}
           >
             Resume
-          </Button>
+          </Button> */}
 
+<a
+            href="/Rahul_Kushwah_Resume.pdf"
+            download="Rahul_Kushwah_Resume.pdf"
+            onClick={() => {
+              window.open(
+                // "https://drive.google.com/file/d/1-27JqVP743yK-A3ZE3CvIRpF32OzsQfL/view?usp=sharing"
+                "https://drive.google.com/file/d/1axYneHxeq0hrnoHqdb_KJNWoEMfTPdnO/view"
+              );
+            }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              colorScheme={"transperent"}
+              className="link"
+              fontSize={"25px"}
+              p="0"
+              id="resume-button-2"
+              value="download"
+            > 
+              Resume
+            </Button>
+          </a>
 
 
         
