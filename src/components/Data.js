@@ -188,7 +188,7 @@ export const AllData = [
  
 export const projectData = [
 { title: 'Fashion Road',
-  video: 'https://rahulrathod5181.github.io/static/media/LimeRoad.5991108c1517054b6a2c.mp4',
+  video: 'https://res.cloudinary.com/dloxi4h21/video/upload/v1686671712/FashionRoad_y0x8da.mp4',
   type: ' Collaborative',
   des: 'Fashion Road is a cloned website of Limeroad.com, It is an E-Commerce platform. It focuses on clothing and accessories for women, men and kids.',
   techStack: [2,8,0,1,4,3,5,6,7],
@@ -196,7 +196,7 @@ export const projectData = [
   deploy: 'https://fashionroad-animesh-0041.vercel.app'
 },
 { title: 'StyleHub',
-  video: 'https://rahulrathod5181.github.io/static/media/LimeRoad.5991108c1517054b6a2c.mp4',
+  video: 'https://res.cloudinary.com/dloxi4h21/video/upload/v1686671721/StyleHub_pmciws.mp4',
   type: 'Collaborative',
   des: 'StyleHub is a cloned website of Myntra.com, It is a Casual Wear and Lifestyle Brand and E-commerce platform. StyleHub is a one stop shop for all your fashion and lifestyle needs. ',
   techStack: [2,8,0,1,4,3],
@@ -204,7 +204,7 @@ export const projectData = [
   deploy: 'https://stylehub-phi.vercel.app/'
 },
 { title: 'BEcool',
-  video: 'https://rahulrathod5181.github.io/static/media/LimeRoad.5991108c1517054b6a2c.mp4',
+  video: 'https://res.cloudinary.com/dloxi4h21/video/upload/v1686671716/BEcool_y1zmly.mp4',
   type: 'Collaborative',
   des: 'BEcool is a cloned website of Bewakoof.com, It is an E-Commerce website, where you could buy a varities of clothes of different category.',
   techStack: [0,1,4,9],
@@ -212,7 +212,7 @@ export const projectData = [
   deploy: 'https://becool-rahul.netlify.app/index.html'
 },
 { title: 'Spark America',
-  video: 'https://rahulrathod5181.github.io/static/media/LimeRoad.5991108c1517054b6a2c.mp4',
+  video: 'https://res.cloudinary.com/dloxi4h21/video/upload/v1686671709/SparkAmerica_uyc1rh.mp4',
   type: 'Solo',
   des: 'A single tech platform to participate in our free and fun annual calendar of challenges that encourage individual achievement while driving participation in friendly competition.',
   techStack: [0,1,4],

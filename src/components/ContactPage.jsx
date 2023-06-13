@@ -11,6 +11,7 @@ import {
   ActionIcon,
   rem,
   Flex,
+  useMantineTheme,
 } from "@mantine/core";
 
 import { SiGithub, SiLinkedin, SiGmail } from "react-icons/si";
@@ -22,6 +23,8 @@ import { useInView } from "react-intersection-observer";
 import { useEffect } from "react";
 
 const useStyles = createStyles((theme) => ({
+  
+
   wrapper: {
     minHeight: 400,
     boxSizing: "border-box",
@@ -88,9 +91,9 @@ const useStyles = createStyles((theme) => ({
 }));
 
 const social = [
-  {Icon:SiGmail, idName: 'contact-gmail'},
-  {Icon:SiLinkedin, idName: 'contact-linkedin'},
-  {Icon:SiGithub, idName: 'contact-github'},
+  {Icon:SiGmail, idName: 'contact-gmail', myLink:"mailto:rahul1905.sk@gmail.com"},
+  {Icon:SiLinkedin, idName: 'contact-linkedin', myLink:"https://www.linkedin.com/in/rahul-singh-kushwah-6a664b172"},
+  {Icon:SiGithub, idName: 'contact-github',  myLink:"https://github.com/Rahul1905-sk"},
    
     
 ];
@@ -118,17 +121,40 @@ alert('Please fill details')
   }
 
 
-  const icons = social.map(({Icon,idName}, index) => (
+  const icons = social.map(({Icon,idName,myLink}, index) => (
     <ActionIcon
       key={index}
       size={28}
       id={idName}
+      component="a"
       className={classes.social}
       variant="transparent"
+      href={myLink}  
+      target="_blank"
       >
-      <Icon size="1.4rem" stroke={1.5} />
+      <Icon size="1.6rem" stroke={1.5}/>
     </ActionIcon>
   ));
+
+
+  // <Group spacing={'35px'} mb={'25px'} >
+  //         <ActionIcon size={'lg'} component="a" id="contact-linkedin" target="_blank" href="https://www.linkedin.com/in/rahul-singh-kushwah-6a664b172">
+  //           {" "}
+  //           <SiLinkedin size={'40px'} color="red"  />{" "}
+  //         </ActionIcon>
+  //         <ActionIcon size={'lg'} id="contact-github" component="a" target="_blank" href="https://github.com/Rahul1905-sk">
+  //           {" "}
+  //           <SiGithub  size={'40px'} color="red"   />{" "}
+  //         </ActionIcon>
+  //         <ActionIcon size={'lg'} target="_blank" component="a" href="mailto:rahul1905.sk@gmail.com">
+  //           {" "}
+  //           <SiGmail  size={'40px'} color="red"   />{" "}
+  //         </ActionIcon>
+  //       </Group >
+
+
+
+
 
   
   const { ref, inView, entry } = useInView({
@@ -165,7 +191,7 @@ useEffect(() => {
             in user experience design, interfaces and web development.
           </Text>
 
-          <ContactIconsList variant="white" />
+          <ContactIconsList variant="white"  />
 
           <Group mt="xl">{icons}</Group>
         </div>

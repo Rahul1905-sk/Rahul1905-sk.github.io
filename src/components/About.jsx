@@ -6,6 +6,7 @@ import MyTitle from "./MyTitle";
 import { SlBadge } from "react-icons/sl";
 import { BsDisplay } from "react-icons/bs";
 import { HiOutlineClock } from "react-icons/hi";
+import { MdDownload } from "react-icons/md";
 import { FcDownload } from "react-icons/fc";
 import { handleResume } from "./HomePage";
 import { useContext } from "react";
@@ -13,7 +14,6 @@ import {  } from "react-intersection-observer";
 import { useInView } from 'react-intersection-observer';
 import NavbarContextProvider, { useNavbarData } from "./NavbarContext";
 import { useEffect } from "react";
-import resume from './download/Rahul_Kushwah_Resume.pdf'
  
 const About = () => {
   const { colors } = useMantineTheme();
@@ -87,25 +87,7 @@ useEffect(() => {
             and has the ability to adapt to new technologies. Capable of working
             in teams by providing valuable support.
           </Box>
-          {/* <Button
-              id='resume-button-2'
-              onClick={() =>
-                openInNewTab(
-                  'https://drive.google.com/file/d/1axYneHxeq0hrnoHqdb_KJNWoEMfTPdnO/view' */}
-                  {/* // 'https://drive.google.com/file/d/1iRtaj8LV9l5y9-aiEVNRFC0KLz5Q-JMZ/view?usp=sharing' */}
-                {/* )
-              }
-              colorScheme={'teal'}
-            >
-              <a href={resume} download id='resume-link-2'>
-                <Flex>
-                  <Text as='span'>Resume</Text>
-                  <Text as='span' ml={'2'}> */}
-                    {/* <AiOutlineDownload fontSize={'1.2rem'} /> */}
-                  {/* </Text>
-                </Flex>
-              </a>
-            </Button> */}
+        
          
          <a
             href="/Rahul_Kushwah_Resume.pdf"
@@ -120,12 +102,15 @@ useEffect(() => {
             rel="noopener noreferrer"
           >
             <Button
-              colorScheme={"transperent"}
+              
               className="link"
-              fontSize={"25px"}
-              p="0"
+            fz={'18px'}
+              p="5px 15px"
               id="resume-button-2"
               value="download"
+              style={{boxSizing:'content-box'}}
+
+              leftIcon={<MdDownload />}
             > 
               Resume
             </Button>

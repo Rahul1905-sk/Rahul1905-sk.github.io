@@ -17,6 +17,7 @@ import * as animationData from "../lottie.json";
 import TypewriterComp from "./TypewriterEffect/Typewriter"; 
 import { ParticlesOut } from "./ParticlesAnimation";
 import { useEffect } from "react";
+import { MdDownload } from "react-icons/md";
 import { useNavbarData } from "./NavbarContext";
 import { useInView } from "react-intersection-observer";
 
@@ -91,20 +92,7 @@ useEffect(() => {
           </ActionIcon>
         </Group >
         
-          {/* <Button
-            target="_blank"
-          style={{alignSelf:'flex-start', boxSizing: 'content-box'}}
-            onClick={handleResume} 
-            p={'8px 35px'}
-            radius={'0.3rem'}
-             fz={'20px'} 
-             id="resume-button-1"
-             className="nav-link resume-2" 
-            
-            leftIcon={ <FcDownload  id="resume-link-2"  style={{marginRight:'5px'}}  />}
-          >
-            Resume
-          </Button> */}
+        
 
 <a
             href="/Rahul_Kushwah_Resume.pdf"
@@ -119,12 +107,15 @@ useEffect(() => {
             rel="noopener noreferrer"
           >
             <Button
-              colorScheme={"transperent"}
+              
               className="link"
-              fontSize={"25px"}
-              p="0"
-              id="resume-button-2"
+            fz={'18px'}
+              p="5px 15px"
+              id="resume-button-1"
               value="download"
+              style={{boxSizing:'content-box'}}
+
+              leftIcon={<MdDownload />}
             > 
               Resume
             </Button>

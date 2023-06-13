@@ -53,7 +53,7 @@ function ContactIcon({
       )}
 
       <div>
-        <Text size="xs" className={classes.title}>
+        <Text size="md" className={classes.title}>
           {title}
         </Text>
         <Text className={classes.description}>{description}</Text>
@@ -85,7 +85,7 @@ export function ContactIcons() {
           backgroundColor: theme.white,
         })}
       >
-        <ContactIconsList />
+        <ContactIconsList  />
       </Box>
 
       <Box
