@@ -89,7 +89,7 @@ useEffect(() => {
           </Box>
         
          
-         <a
+         {/* <a
             href="/Rahul_Kushwah_Resume.pdf"
             download="Rahul_Kushwah_Resume.pdf"
             onClick={() => {
@@ -114,7 +114,7 @@ useEffect(() => {
             > 
               Resume
             </Button>
-          </a>
+          </a> */}
 
         </Flex>
       </Flex>

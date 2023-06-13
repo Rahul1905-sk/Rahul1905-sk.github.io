@@ -56,7 +56,7 @@ console.log(linkName);
    
        {arr.map((e)=> <Link key={e.title} {...e} active={linkName === e.name} />  )}
        
-       {/* <Anchor   >   <NavLink label={'Resume'}  id="resume-button-1" style={{display:'none'}} /> </Anchor> */}
+       <Anchor   >   <NavLink label={'Resume'}  id="resume-button-1" style={{display:'none'}} /> </Anchor>
         </Flex>
        
     </Flex>
