@@ -6,7 +6,7 @@ import {FaFilePdf} from 'react-icons/fa'
 import {FaPhoneAlt} from 'react-icons/fa'
 import {GiSkills} from 'react-icons/gi'
 import {BsGearFill} from 'react-icons/bs'
-import { Anchor, Box, Center, Flex, NavLink, Text, Title, useMantineTheme } from '@mantine/core'
+import { Anchor, Box, Button, Center, Flex, NavLink, Text, Title, useMantineTheme } from '@mantine/core'
 import { useInView } from 'react-intersection-observer'
 import { useNavbarData } from './NavbarContext'
 
@@ -56,9 +56,38 @@ console.log(linkName);
    
        {arr.map((e)=> <Link key={e.title} {...e} active={linkName === e.name} />  )}
        
-       <Anchor id="resume-link-1" >   <NavLink label={'Resume'}  
+       <Anchor   >   <NavLink label={'Resume'}  
       className="nav-link resume"
       style={{display:'none'}} /> </Anchor>
+<a
+            href="/Rahul_Kushwah_Resume.pdf"
+            download="Rahul_Kushwah_Resume.pdf"
+            id="resume-link-1"
+            style={{display:'none'}}
+            onClick={() => {
+              window.open(
+                // "https://drive.google.com/file/d/1-27JqVP743yK-A3ZE3CvIRpF32OzsQfL/view?usp=sharing"
+                "https://drive.google.com/file/d/1axYneHxeq0hrnoHqdb_KJNWoEMfTPdnO/view"
+              );
+            }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button
+              
+              className="link"
+            fz={'18px'}
+              p="5px 15px"
+              id="resume-button-1"
+              value="download"
+              style={{boxSizing:'content-box'}}
+
+              // leftIcon={<MdDownload />}
+            > 
+              Resume
+            </Button>
+          </a>
+
         </Flex>
        
     </Flex>
