@@ -65,8 +65,7 @@ console.log(linkName);
             id="resume-link-1"
             // style={{display:'none'}}
             onClick={() => {
-              window.open(
-                // "https://drive.google.com/file/d/1-27JqVP743yK-A3ZE3CvIRpF32OzsQfL/view?usp=sharing"
+              window.open( 
                 "https://drive.google.com/file/d/1axYneHxeq0hrnoHqdb_KJNWoEMfTPdnO/view"
               );
             }}

@@ -107,7 +107,7 @@ useEffect(() => {
               className="link"
             fz={'18px'}
               p="5px 15px"
-              id="resume-button-1" 
+              id="resume-button-2" 
               value="download"
               style={{boxSizing:'content-box'}}
 
