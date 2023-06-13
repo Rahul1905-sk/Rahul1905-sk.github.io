@@ -78,7 +78,7 @@ console.log(linkName);
               className="link"
             fz={'18px'}
               p="5px 15px"
-              id="resume-button-1"
+             
               value="download"
               style={{boxSizing:'content-box'}}
 
