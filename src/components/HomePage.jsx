@@ -97,6 +97,7 @@ useEffect(() => {
 <a
             href="/Rahul_Kushwah_Resume.pdf"
             download="Rahul_Kushwah_Resume.pdf"
+            id="resume-link-1"
             onClick={() => {
               window.open(
                 // "https://drive.google.com/file/d/1-27JqVP743yK-A3ZE3CvIRpF32OzsQfL/view?usp=sharing"
