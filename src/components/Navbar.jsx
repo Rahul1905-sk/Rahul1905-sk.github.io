@@ -63,7 +63,7 @@ console.log(linkName);
             href="/Rahul_Kushwah_Resume.pdf"
             download="Rahul_Kushwah_Resume.pdf"
             id="resume-link-1"
-            style={{display:'none'}}
+            // style={{display:'none'}}
             onClick={() => {
               window.open(
                 // "https://drive.google.com/file/d/1-27JqVP743yK-A3ZE3CvIRpF32OzsQfL/view?usp=sharing"
@@ -78,7 +78,7 @@ console.log(linkName);
               className="link"
             fz={'18px'}
               p="5px 15px"
-             
+              id="resume-button-1"
               value="download"
               style={{boxSizing:'content-box'}}
 
