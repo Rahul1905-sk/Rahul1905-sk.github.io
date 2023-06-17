@@ -46,11 +46,11 @@ const {primaryColor} = useMantineTheme()
 
 const [linkName] =  useNavbarData()
  
-console.log(linkName);
+// console.log(linkName);
 
   return (
 
-    <Flex pos={'sticky'}  top={0} left={0} id="nav-menu"   h="5rem" justify={'space-around'} align={"center"} sx={{boxShadow: "rgba(0, 0, 0, 0.1) 0px 25px 20px -20px", zIndex:100, backgroundColor:'white'}}>
+    <Flex pos={'sticky'}  top={0} left={0} id="nav-menu"   h="5rem" justify={'space-around'} align={"center"} sx={{boxShadow: "rgba(0, 0, 0, 0.2) 0px 25px 20px -20px", zIndex:100, backgroundColor:'white'}}>
         <Title style={{fontFamily: 'g'}} fz={'40px'}   > <Text ff={'cursive'}  component='span' color={primaryColor}> R</Text>SK </Title>
         <Flex id='nav-menu' w="50%" justify={"space-evenly"}  align={"center"} > 
    
