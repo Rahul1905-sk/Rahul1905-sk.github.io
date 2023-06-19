@@ -56,13 +56,14 @@ const [linkName] =  useNavbarData()
    
        {arr.map((e)=> <Link key={e.title} {...e} active={linkName === e.name} />  )}
        
-       <Anchor   >   <NavLink label={'Resume'}  
+       {/* <Anchor   >   <NavLink label={'Resume'}  
       className="nav-link resume"
-      style={{display:'none'}} /> </Anchor>
+      style={{display:'none'}} /> </Anchor> */}
 <a
             href="/Rahul_Kushwah_Resume.pdf"
             download="Rahul_Kushwah_Resume.pdf"
             id="resume-link-1"
+            className="nav-link resume"
             // style={{display:'none'}}
             onClick={() => {
               window.open( 
@@ -73,14 +74,12 @@ const [linkName] =  useNavbarData()
             rel="noopener noreferrer"
           >
             <Button
-              
               className="link"
             fz={'18px'}
               p="5px 15px"
-              id="resume-button-1"
+              // id="resume-button-1"
               value="download"
               style={{boxSizing:'content-box'}}
-
               // leftIcon={<MdDownload />}
             > 
               Resume
