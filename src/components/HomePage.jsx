@@ -94,7 +94,7 @@ useEffect(() => {
         
         
 
-{/* <a
+<a
             href="/Rahul_Kushwah_Resume.pdf"
             download="Rahul_Kushwah_Resume.pdf"
             id="resume-link-2"
@@ -120,7 +120,7 @@ useEffect(() => {
             > 
               Resume
             </Button>
-          </a> */}
+          </a>
 
 
         
