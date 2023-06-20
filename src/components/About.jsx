@@ -92,7 +92,7 @@ useEffect(() => {
          <a
             href="/Rahul_Kushwah_Resume.pdf"
             download="Rahul_Kushwah_Resume.pdf"
-            // id="resume-link-2"
+            id="resume-link-2"
             onClick={() => {
               window.open(
                 // "https://drive.google.com/file/d/1-27JqVP743yK-A3ZE3CvIRpF32OzsQfL/view?usp=sharing"
@@ -107,7 +107,7 @@ useEffect(() => {
               className="link"
             fz={'18px'}
               p="5px 15px"
-              id="resume-button-2" 
+              // id="resume-button-2" 
               value="download"
               style={{boxSizing:'content-box'}}
 
