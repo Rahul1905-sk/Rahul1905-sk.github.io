@@ -175,7 +175,7 @@ a:hover {
 .imgCard {
   width: 300px;
   height: 360px;
-  background-color: #06060d;
+  /* background-color: #06060d; */
   position: relative;
   border-radius: 8px;
   display: grid;
@@ -188,13 +188,14 @@ a:hover {
   position: absolute;
   width: 150px;
   height: 140%;
-  background-image: linear-gradient(180deg, #865dff, #e384ff);
+  background-image: linear-gradient(180deg, #5019f5, #597ced);
+  /* background-image: linear-gradient(180deg, #865dff, #e384ff); */
   animation: rotate 3s linear infinite;
 }
 .imgCard::after {
   content: "";
   position: absolute;
-  inset: 8px;
+  inset: 10px;
   background-color: #030029;
   border-radius: inherit;
 }

@@ -94,10 +94,10 @@ useEffect(() => {
         
         
 
-<a
+{/* <a
             href="/Rahul_Kushwah_Resume.pdf"
             download="Rahul_Kushwah_Resume.pdf"
-            id="resume-link-2"
+            // id="resume-link-2"
             onClick={() => {
               window.open(
                 // "https://drive.google.com/file/d/1-27JqVP743yK-A3ZE3CvIRpF32OzsQfL/view?usp=sharing"
@@ -120,7 +120,7 @@ useEffect(() => {
             > 
               Resume
             </Button>
-          </a>
+          </a> */}
 
 
         

@@ -49,9 +49,7 @@ useEffect(() => {
                 src="../../RahulImage.jpeg"
               />
             </Box>
-            {/* <div className='imgCard'> */}
-
-            {/* </div> */}
+           
             <div className="a"></div>
           </Box>
         </Flex>

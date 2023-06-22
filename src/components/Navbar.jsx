@@ -56,9 +56,6 @@ const [linkName] =  useNavbarData()
    
        {arr.map((e)=> <Link key={e.title} {...e} active={linkName === e.name} />  )}
        
-       {/* <Anchor   >   <NavLink label={'Resume'}  
-      className="nav-link resume"
-      style={{display:'none'}} /> </Anchor> */}
 <a
             href="/Rahul_Kushwah_Resume.pdf"
             download="Rahul_Kushwah_Resume.pdf"
@@ -75,11 +72,12 @@ const [linkName] =  useNavbarData()
           >
             <Button
               className="link"
-            fz={'18px'}
-              p="5px 15px"
-              // id="resume-button-1"
-              value="download"
-              style={{boxSizing:'content-box'}}
+            fz={'16px'}
+              p="1px 15px" 
+          
+              id="resume-button-1"
+              value="download" 
+              style={{boxSizing:'content-box', color:'white', boxShadow:"rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px"}}
               // leftIcon={<MdDownload />}
             > 
               Resume
