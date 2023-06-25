@@ -209,7 +209,7 @@ export const projectData = [
   des: 'BEcool is a cloned website of Bewakoof.com, It is an E-Commerce website, where you could buy a varities of clothes of different category.',
   techStack: [0,1,4,9],
   github: 'https://github.com/Rahul1905-sk/mellow-sidewalk-9952',
-  deploy: 'https://becool-rahul.netlify.app/index.html'
+  deploy: "https://mellow-sidewalk-9952.vercel.app/"
 },
 { title: 'Spark America',
   video: 'https://res.cloudinary.com/dloxi4h21/video/upload/v1686671709/SparkAmerica_uyc1rh.mp4',
