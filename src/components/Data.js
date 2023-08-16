@@ -201,7 +201,7 @@ export const projectData = [
   des: 'StyleHub is a cloned website of Myntra.com, It is a Casual Wear and Lifestyle Brand and E-commerce platform. StyleHub is a one stop shop for all your fashion and lifestyle needs. ',
   techStack: [2,8,0,1,4,3],
   github: 'https://github.com/bharat24862486/valid-circle-9091',
-  deploy: 'https://myntra-clone-style-hub.vercel.app/'
+  deploy: 'https://valid-circle-9091-one.vercel.app/'
 },
 { title: 'BEcool',
   video: 'https://res.cloudinary.com/dloxi4h21/video/upload/v1686671716/BEcool_y1zmly.mp4',
