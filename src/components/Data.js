@@ -7,7 +7,7 @@ import chakra from "../assets/frontendSkills/chakra-ui.png";
 import mantine from "../assets/frontendSkills/mantine-ui.png";
 import material from "../assets/frontendSkills/material-ui.png";
 import tailwind from "../assets/frontendSkills/tailwind.png";
-import tsLogo from '../assets/frontendSkills/ts.png';
+import tsLogo from '../assets/frontendSkills/Ts.png';
 
 
 import mongo from "../assets/backendSkills/Mongo.png";
