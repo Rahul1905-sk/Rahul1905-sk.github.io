@@ -88,8 +88,8 @@ useEffect(() => {
         
          
          <a
-            href="/Rahul_Kushwah_Resume.pdf"
-            download="Rahul_Kushwah_Resume.pdf"
+            href="/Rahul_Kushwah_Resume1.pdf"
+            download="Rahul_Kushwah_Resume1.pdf"
             id="resume-link-2"
             onClick={() => {
               window.open(
