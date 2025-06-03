@@ -94,7 +94,7 @@ useEffect(() => {
             onClick={() => {
               window.open(
                 // "https://drive.google.com/file/d/1-27JqVP743yK-A3ZE3CvIRpF32OzsQfL/view?usp=sharing"
-                "https://drive.google.com/file/d/1axYneHxeq0hrnoHqdb_KJNWoEMfTPdnO/view"
+                "https://drive.google.com/file/d/1axYneHxeq0hrnoHqdb_KJNWoEMfTPdnO/views"
               );
             }}
             target="_blank"
