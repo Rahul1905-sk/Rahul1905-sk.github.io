@@ -7,7 +7,8 @@ import chakra from "../assets/frontendSkills/chakra-ui.png";
 import mantine from "../assets/frontendSkills/mantine-ui.png";
 import material from "../assets/frontendSkills/material-ui.png";
 import tailwind from "../assets/frontendSkills/tailwind.png";
-import ts from "../assets/frontendSkills/ts.png";
+import tsLogo from '../assets/frontendSkills/ts.png';
+
 
 import mongo from "../assets/backendSkills/Mongo.png";
 import mongoose from "../assets/backendSkills/mongoose.png";
@@ -94,7 +95,7 @@ export const AllData = [
 
   {
     id: 10,
-    image: ts,
+    image: tsLogo,
     title: "Ts",
     type: "FE",
     color: "0 0 10px rgba(59, 130, 246, 0.5)",
