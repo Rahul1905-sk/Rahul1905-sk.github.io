@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://rahul1905-sk.github.io/Rahul1905-sk.github.io",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
