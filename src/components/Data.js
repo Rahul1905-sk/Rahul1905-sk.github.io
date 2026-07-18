@@ -29,7 +29,7 @@ import {
   FaUserTie,
   FaEarListen,
   FaListCheck,
-} from "react-Icons/fa6";
+} from "react-icons/fa6";
 
 
  
