@@ -76,7 +76,8 @@ useEffect(() => {
          fz={'16px'}
           gradient={{ from: "orange", to: "red" }}
         >
-          Tools
+          {/* Tools */}
+          Soft Skills
         </Button>
       </Button.Group>
       <SimpleGrid cols={4} w={"80%"} m={"auto"} mt={"20px"} >
@@ -90,8 +91,12 @@ useEffect(() => {
           AllData.filter((e) => e.type == "BE").map((e) => (
             <SkillCards key={e.title} {...e} />
           ))}
-        {tabIndex === 3 &&
+        {/* {tabIndex === 3 &&
           AllData.filter((e) => e.type == "tools").map((e) => (
+            <SkillCards key={e.title} {...e} />
+          ))} */}
+        {tabIndex === 3 &&
+          AllData.filter((e) => e.type == "softSkills").map((e) => (
             <SkillCards key={e.title} {...e} />
           ))}
       </SimpleGrid>

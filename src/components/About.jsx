@@ -1,5 +1,5 @@
 import React from "react";
-import { Anchor, Box, Button, Flex, Text, useMantineTheme } from "@mantine/core";
+import { ActionIcon, Anchor, Box, Button, Flex, Group, Text, useMantineTheme } from "@mantine/core";
 import Card from "./Card";
 import MyTitle from "./MyTitle";
 
@@ -10,33 +10,34 @@ import { MdDownload } from "react-icons/md";
 import { FcDownload } from "react-icons/fc";
 import { handleResume } from "./HomePage";
 import { useContext } from "react";
-import {  } from "react-intersection-observer";
+import { } from "react-intersection-observer";
 import { useInView } from 'react-intersection-observer';
 import NavbarContextProvider, { useNavbarData } from "./NavbarContext";
 import { useEffect } from "react";
- 
+import { SiGithub, SiGmail, SiLinkedin } from "react-icons/si";
+
 const About = () => {
   const { colors } = useMantineTheme();
   const { primaryColor } = useMantineTheme();
 
- 
+
   const { ref, inView, entry } = useInView({
     threshold: 0.5
   });
 
-const [_,setLinkName] =  useNavbarData()
+  const [_, setLinkName] = useNavbarData()
 
-useEffect(() => {
- 
-  if(inView) {
-    setLinkName('about')
-  }
+  useEffect(() => {
 
-}, [inView])
+    if (inView) {
+      setLinkName('about')
+    }
+
+  }, [inView])
 
 
   return (
-    <Flex ref={ref}  className="about section" direction={"column"} id="about" p={"0 160px"} h={"100vh"}  >
+    <Flex ref={ref} className="about section" direction={"column"} id="about" p={"0 160px"} h={"100vh"}  >
       <MyTitle title={"About Me"} des={"Who I am"} />
 
       <Flex gap={"3.125rem"}   >
@@ -49,7 +50,7 @@ useEffect(() => {
                 src="../../RahulImage.jpeg"
               />
             </Box>
-           
+
             <div className="a"></div>
           </Box>
         </Flex>
@@ -77,7 +78,7 @@ useEffect(() => {
               icon={<BsDisplay />}
             />
           </Flex>
-          <Box  id="user-detail-intro"  className="user-detail-intro" mt={"2.5rem"} mb={'40px'}  fw={500} sx={{ textAlign: "justify" }}>
+          <Box id="user-detail-intro" className="user-detail-intro" mt={"2.5rem"} mb={'40px'} fw={500} sx={{ textAlign: "justify" }}>
             An aspiring Full Stack Web Developer who build things for the web
             and enjoy creating things that live on the internet and has a strong
             command of HTML, CSS, and JavaScript, and is proficient in the MERN
@@ -85,9 +86,9 @@ useEffect(() => {
             and has the ability to adapt to new technologies. Capable of working
             in teams by providing valuable support.
           </Box>
-        
-         
-         <a
+
+
+          {/* <a
             href="/Rahul_Kushwah_Resume1.pdf"
             download="Rahul_Kushwah_Resume1.pdf"
             id="resume-link-2"
@@ -113,7 +114,22 @@ useEffect(() => {
             > 
               Resume
             </Button>
-          </a>
+          </a> */}
+          <Group spacing={'35px'} mb={'25px'} >
+            <ActionIcon size={'lg'} component="a" id="contact-linkedin" target="_blank" href="https://www.linkedin.com/in/rahul-singh-kushwah-6a664b172">
+              {" "}
+              <SiLinkedin size={'48px'} color={colors.blue[5]} />{" "}
+            </ActionIcon>
+            <ActionIcon size={'lg'} id="contact-github" component="a" target="_blank" href="https://github.com/Rahul1905-sk">
+              {" "}
+              <SiGithub size={'48px'} color={colors.dark[4]} />{" "}
+            </ActionIcon>
+            <ActionIcon size={'lg'} target="_blank" component="a" href="mailto:rahul1905.sk@gmail.com">
+              {" "}
+              <SiGmail size={'48px'} color={colors.red[5]} />{" "}
+            </ActionIcon>
+          </Group >
+
 
         </Flex>
       </Flex>

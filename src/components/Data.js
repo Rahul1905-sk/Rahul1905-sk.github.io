@@ -23,6 +23,18 @@ import npm from "../assets/tools/npm.png";
 import postman from "../assets/tools/postman.png";
 import vercel from "../assets/tools/vercel.png";
 
+import {
+  FaLightbulb,
+  FaUsers,
+  FaUserTie,
+  FaEarListen,
+  FaListCheck,
+} from "react-Icons/fa6";
+
+
+ 
+
+
 export const AllData = [
   {
     id: 1,
@@ -184,6 +196,41 @@ export const AllData = [
     title: "Vercel",
     type: "tools",
   },
+    {
+    id: 22,
+    Icon: FaLightbulb  ,
+    color:"#FFC107", // Amber/Yellow
+    title: "Problem Solving",
+    type: "softSkills",
+  },
+  {
+    id: 23,
+    Icon: FaUsers  ,
+    color:"#2196F3", // Blue
+    title: "Team Collaboration",
+    type: "softSkills",
+  },
+  {
+    id: 24,
+    Icon: FaUserTie  ,
+    color:"#6A1B9A" , // Purple
+    title: "Leadership",
+    type: "softSkills",
+  },
+  {
+    id: 25,
+    Icon: FaEarListen,
+    color:"#009688",
+    title: "Active Listening",
+    type: "softSkills",
+  },
+  {
+    id: 26,
+    Icon: FaListCheck   ,
+    color:"#4CAF50" , 
+    title: "Multitasking",
+    type: "softSkills",
+  },
 ];
 
  
@@ -193,7 +240,7 @@ export const projectData = [
   type: ' Collaborative',
   des: 'Fashion Road is a cloned website of Limeroad.com, It is an E-Commerce platform. It focuses on clothing and accessories for women, men and kids.',
   techStack: [2,8,0,1,4,3,5,6,7],
-  github: 'https://github.com/RahulRathod5181/Fashion-Road',
+  github: 'https://github.com/Rahul1905-sk/Fashion-Road',
   deploy: 'https://fashionroad-animesh-0041.vercel.app'
 },
 { title: 'StyleHub',
@@ -201,8 +248,8 @@ export const projectData = [
   type: 'Collaborative',
   des: 'StyleHub is a cloned website of Myntra.com, It is a Casual Wear and Lifestyle Brand and E-commerce platform. StyleHub is a one stop shop for all your fashion and lifestyle needs. ',
   techStack: [2,8,0,1,4,3],
-  github: 'https://github.com/bharat24862486/valid-circle-9091',
-  deploy: 'https://valid-circle-9091-one.vercel.app/'
+  github: 'https://github.com/Rahul1905-sk/stylehub',
+  deploy: 'https://stylehub-chi.vercel.app/'
 },
 { title: 'BEcool',
   video: 'https://res.cloudinary.com/dloxi4h21/video/upload/v1686671716/BEcool_y1zmly.mp4',
@@ -210,7 +257,7 @@ export const projectData = [
   des: 'BEcool is a cloned website of Bewakoof.com, It is an E-Commerce website, where you could buy a varities of clothes of different category.',
   techStack: [0,1,4,9],
   github: 'https://github.com/Rahul1905-sk/mellow-sidewalk-9952',
-  deploy: "https://mellow-sidewalk-9952.vercel.app/"
+  deploy: "https://becool-demo.vercel.app/"
 },
 { title: 'Spark America',
   video: 'https://res.cloudinary.com/dloxi4h21/video/upload/v1686671709/SparkAmerica_uyc1rh.mp4',
